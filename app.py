@@ -11,6 +11,10 @@ def get_home():
 def get_bye():
     return "Goodbye, world!"
 
+@app.route('/name', methods=['GET'])
+def get_name():
+    return "Hello, dan"
+
 if __name__ == '__main__':
     app.run(
       debug=True,
